@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,14 +7,162 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".MainActivity"
     tools:showIn="@layout/app_bar_main">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:id="@+id/fl_main"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </FrameLayout>
+        <LinearLayout
+            android:id="@+id/ll_main"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_margin="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:src="@drawable/ic_user"
+                    android:id="@+id/iv_ad"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"/>
+                <TextView
+                    android:id="@+id/tv_ad"
+                    android:layout_toRightOf="@id/iv_ad"
+                    android:text="Administrador"
+                    android:textSize="30dp"
+                    android:layout_marginLeft="40dp"
+                    android:textColor="#485B69"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_below="@id/tv_ad"
+                    android:layout_toRightOf="@id/iv_ad"
+                    android:layout_marginLeft="40dp"
+                    android:layout_gravity="bottom"
+                    android:text="Principal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cd_1"
+                    android:backgroundTint="#FFA511"
+                    style="@style/card">
+                    <TextView
+                        android:textColor="#fff"
+                        android:gravity="center"
+                        android:text="Nuevo \nArtículo"
+                        android:textSize="30dp"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textColor="#fff"
+                        android:layout_margin="10dp"
+                        android:layout_gravity="bottom|center"
+                        android:text="Agregar al inventario"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cd_2"
+                    android:backgroundTint="#742A64"
+                    style="@style/card">
+                    <TextView
+                        android:textColor="#fff"
+                        android:text="Nuevo \nProveedor"
+                        android:textSize="30dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cd_3"
+                    android:backgroundTint="#F62F58"
+                    style="@style/card">
+                    <ImageView
+                        android:layout_margin="10dp"
+                        android:layout_gravity="right"
+                        android:background="@drawable/bg_round"
+                        android:src="@drawable/ic_next"
+                        android:tint="#F62F58"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"/>
+                    <ImageView
+                        android:src="@drawable/ic_about"
+                        android:layout_gravity="center"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp" />
+                    <TextView
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-</android.support.constraint.ConstraintLayout>
+                        android:textColor="#fff"
+                        android:text="Proveedores"
+                        android:textSize="20dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textColor="#fff"
+                        android:layout_margin="10dp"
+                        android:layout_gravity="bottom"
+                        android:text="3 Registros"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cd_4"
+                    android:backgroundTint="#2FAAF6"
+                    style="@style/card">
+                    <ImageView
+                        android:layout_margin="10dp"
+                        android:layout_gravity="right"
+                        android:background="@drawable/bg_round"
+                        android:src="@drawable/ic_next"
+                        android:tint="#2FAAF6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"/>
+                    <ImageView
+                        android:src="@drawable/ic_about"
+                        android:layout_gravity="center"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp" />
+                    <TextView
+                        android:textColor="#fff"
+                        android:text="Proveedores"
+                        android:textSize="20dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textColor="#fff"
+                        android:layout_margin="10dp"
+                        android:layout_gravity="bottom"
+                        android:text="3 Registros"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

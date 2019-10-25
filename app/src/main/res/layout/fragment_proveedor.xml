@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Proveedor"
+    android:padding="20dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <EditText
+            android:inputType="text"
+            android:id="@+id/tv_no"
+            android:padding="20dp"
+            android:hint="Nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/tv_em"
+            android:padding="20dp"
+            android:hint="Empresa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:inputType="textEmailAddress"
+            android:id="@+id/tv_cor"
+            android:padding="20dp"
+            android:hint="Correo Eléctronico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:inputType="phone"
+            android:id="@+id/tv_te"
+            android:padding="20dp"
+            android:hint="Teléfono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_c"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="bottom|center"
+        android:text="CANCELAR"
+        android:textColor="#fff"
+        android:background="#000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</FrameLayout>

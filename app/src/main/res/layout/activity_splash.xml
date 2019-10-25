@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Splash">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="100dp">
+        <FrameLayout
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="70dp"
+            ></FrameLayout>
+    <ImageView
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/vector2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ImageView>
+    <ImageView
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/vector1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ImageView>
+    <ImageView
+        android:layout_marginTop="90dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/vector3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ImageView>
+    </FrameLayout>
+    <LinearLayout
+        android:layout_marginBottom="100dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_gravity="center"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:background="@drawable/logo"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#fff"/>
+        <TextView
+            android:layout_gravity="center"
+            android:text="Cosielsa"
+            android:textSize="30dp"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_gravity="center"
+            android:text="@string/correo"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="bottom|center"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:text="S.A de C.V"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</FrameLayout>
